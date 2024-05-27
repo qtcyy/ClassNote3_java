@@ -27,6 +27,6 @@ public class Main5 extends JFrame {
         setVisible(true);
     }
     public static void main(String[] args){
-        new Main5();
+        new Calculator();
     }
 }
