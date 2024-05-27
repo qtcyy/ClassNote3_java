@@ -1,6 +1,6 @@
 package classNote.data527;
 
-import javax.swing.JFrame;
+import javax.swing.*;
 import java.awt.*;
 
 public class Main1 extends JFrame {
@@ -15,7 +15,12 @@ public class Main1 extends JFrame {
         setLocation(300,300);
         setResizable(false);
         Container c = getContentPane();
-        c.setBackground(Color.black);
+        c.setBackground(Color.white);
+
+        JLabel la=new JLabel("我是标签");
+        la.setFont(new Font("楷体",Font.BOLD,30));
+
+        c.add(la);
     }
     public static void main(String[] args){
         new Main1();
