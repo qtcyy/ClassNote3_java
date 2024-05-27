@@ -2,6 +2,8 @@ package classNote.data527;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class Main1 extends JFrame {
     public Main1(){
@@ -19,6 +21,13 @@ public class Main1 extends JFrame {
 
         JLabel la=new JLabel("我是标签");
         la.setFont(new Font("楷体",Font.BOLD,30));
+        JButton jb=new JButton("Hello");
+        jb.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
 
         c.add(la);
     }
